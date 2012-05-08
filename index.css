@@ -1,0 +1,60 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  background: url(darkdenim3.png);
+  box-shadow: 0 0 20px #000;
+  font-family: Arial, sans-serif;
+  color: #FFF;
+  line-height: 1.3;
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 20px 20px;
+  width: 100%;
+}
+
+h1 {
+  color: #FF9;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 50px;
+  margin-top: 0;
+  text-shadow: 0 -1px 0 black;
+}
+
+li {
+  margin: 15px 0;
+}
+
+a {
+  color: #FF9;
+  font-weight: bold;
+}
+
+textarea {
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0 0 0;
+  padding: 10px;
+  resize: none;
+  width: 100%;
+}
+
+button {
+  background: #FF9;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+footer {
+  text-align: right;
+}

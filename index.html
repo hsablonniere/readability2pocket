@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Readability 2 pocket (read it later) converter</title>
+  <link rel="stylesheet" href="index.css">
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<h1>Readability 2 pocket (read it later) converter</h1>
+
+<p>If by any chance you feel like moving from readability to pocket (formerly read it later), you've come to the right place!! This tool will help you to export your links from readability and transform them to a format that can be imported in pocket.<p>
+<p>Here's what you need to do :</p>
+<ol>
+  <li>Go to your <a href="https://www.readability.com/account/export">readability export</a> page and click on the export button. This will download a
+    <code>.json</code> file.</li>
+  <li>Copy the content of the <code>.json</code> file you just downloaded and paste it here :
+    <textarea id="readability-json" placeholder="paste your readability export here..."></textarea>
+  </li>
+  <li><button id="convert">Click here to convert!</button></li>
+  <li>Copy the content from the area (just after) and save it to an <code>.html</code> file :
+    <textarea id="instapaper-html" placeholder="here will be the content to import into pocket..."></textarea>
+  </li>
+  <li>Go to your <a href="http://getpocket.com/import/instapaper?e=2">pocket import</a> page and load the <code>.html</code> file you just created.</li>
+  <li>Enjoy your articles on pocket...</li>
+</ol>
+
+<p>If you have any problem using this tool or if you think you can improve it. Please visit the <a href="https://github.com/hsablonniere/readability2pocket">github</a> page and give your thoughts.</p>
+
+<footer><a href="https://twitter.com/#!/hsablonniere">@hsablonniere</a></footer>
+
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
