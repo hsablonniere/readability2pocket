@@ -15,14 +15,13 @@
 
     for (linkIdx in readabilityLinks) {
       link = readabilityLinks[linkIdx];
-      if (link.archived) {
+      if (link.archive) {
         archivedItems += '<li><a href="' + link.article__url + '">' + link.article__title + '</a>: ' + link.article__excerpt + '</li>';
       } else {
         unreadItems += '<li><a href="' + link.article__url + '">' + link.article__title + '</a>: ' + link.article__excerpt + '</li>';
       }
     }
 
-    instapaperTA.value = before + archivedItems + between + unreadItems + after;
-    console.log(unreadItems);
+    instapaperTA.value = before + unreadItems + between + archivedItems + after;
   }, false);
 })();
