@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
-  min-height: 100%;
+html {
+  height: 100%;
 }
 
 body {
@@ -16,6 +16,7 @@ body {
   line-height: 1.3;
   margin: 0 auto;
   max-width: 750px;
+  min-height: 100%;
   padding: 20px 20px;
   width: 100%;
 }
