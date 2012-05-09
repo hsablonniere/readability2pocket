@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-  background: url(darkdenim3.png);
+  background: #333 url(darkdenim3.png);
   box-shadow: 0 0 20px #000;
   font-family: Arial, sans-serif;
   color: #FFF;
