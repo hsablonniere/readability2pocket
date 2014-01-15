@@ -7,21 +7,31 @@
       after = '</ol></body></html>';
 
   convertButton.addEventListener('click', function () {
-    var readabilityLinks = JSON.parse(readabilityTA.value),
-        linkIdx,
-        link,
-        archivedItems = '',
-        unreadItems = '';
-
-    for (linkIdx in readabilityLinks) {
-      link = readabilityLinks[linkIdx];
-      if (link.archive) {
-        archivedItems += '<li><a href="' + link.article__url + '">' + link.article__title + '</a>: ' + link.article__excerpt + '</li>';
-      } else {
-        unreadItems += '<li><a href="' + link.article__url + '">' + link.article__title + '</a>: ' + link.article__excerpt + '</li>';
-      }
+  
+  var readabilityLinks = JSON.parse(readabilityTA.value);
+  
+  console.log(readabilityLinks.bookmarks.length);
+        unreadItems = "";
+        archivedItems = "";
+             
+    for(var i=0; i < readabilityLinks.bookmarks.length; i++)
+    {
+    	link = readabilityLinks.bookmarks[i];
+    	unreadItems += '<li><a href="' + link.article__url + '">' + link.article__title + '</a>: ' + link.article__excerpt + '</li>'; 
+    }
+         
+    instapaperTA.value = before + unreadItems + between + archivedItems + after;     
+        
+             
+    /*for (Object in readabilityLinks) {
+      
+      link = readabilityLinks[Object];
+      
+      unreadItems += '<li><a href="' + link.article__url + '">' + link.article__title + '</a>: ' + link.article__excerpt + '</li>';
+      
+      
     }
 
-    instapaperTA.value = before + unreadItems + between + archivedItems + after;
+    instapaperTA.value = before + unreadItems + between + archivedItems + after;*/
   }, false);
 })();
